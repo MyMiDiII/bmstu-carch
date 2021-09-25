@@ -6,9 +6,9 @@ int main()
     alt_putstr("Hello from System on Chip\n");
     alt_putstr("Send any character\n");
 
-    while (1)
+    while(1)
     {
-        ch=alt_getchar();
+        ch = alt_getchar();
         alt_putchar(ch);
     }
 

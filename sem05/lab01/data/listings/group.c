@@ -17,7 +17,7 @@ int main()
         num /= 10;
     }
 
-    alt_printf("%s", a);
+    alt_putstr(a);
 
     return 0;
 }
