@@ -8,10 +8,10 @@ title : ./doc/report.docx
 
 main : ./tex/MakefileTex
 	cd ./tex && make -f MakefileTex
-	pdfunite pdf/title.pdf pdf/report.pdf pdf/fullReport.pdf
+	pdfunite pdf/title.pdf pdf/report.pdf pdf/MaslovaLab01.pdf
 
 open :
-	okular pdf/fullReport.pdf
+	okular pdf/MaslovaLab01.pdf
 
 clear :
 	rm -rf ./pdf/ ./out/
