@@ -1,0 +1,79 @@
+[Console output redirected to file:/iu_home/iu7072/workspace/Alveo_lab2/Emulation-HW/SystemDebugger_Alveo_lab2_system_Alveo_lab2.launch.log]
+Found Platform
+Platform Name: Xilinx
+INFO: Reading /iu_home/iu7072/workspace/Alveo_lab2_system/Emulation-HW/binary_container_1.xclbin
+Loading: '/iu_home/iu7072/workspace/Alveo_lab2_system/Emulation-HW/binary_container_1.xclbin'
+Trying to program device[0]: xilinx_u200_xdma_201830_2
+INFO: [HW-EMU 01] Hardware emulation runs simulation underneath. Using a large data set will result in long simulation times. It is recommended that a small dataset is used for faster execution. The flow uses approximate models for DDR memory and interconnect and hence the performance data generated is approximate.
+Device[0]: program successful!
+|-------------------------+-------------------------|
+| Kernel                  |    Wall-Clock Time (ns) |
+|-------------------------+-------------------------|
+| var012_no_pragmas       |             15008592508 |
+|-------------------------+-------------------------|
+INFO::[ Vitis-EM 22 ] [Time elapsed: 3 minute(s) 38 seconds, Emulation time: 0.200175 ms]
+Data transfer between kernel(s) and global memory(s)
+var012_no_pragmas_1:m_axi_gmem-DDR[1]          RD = 8.000 KB               WR = 4.000 KB
+var012_pipe_unroll_1:m_axi_gmem-DDR[1]          RD = 0.000 KB               WR = 0.000 KB
+var012_pipelined_1:m_axi_gmem-DDR[1]          RD = 0.000 KB               WR = 0.000 KB
+var012_unrolled_1:m_axi_gmem-DDR[1]          RD = 0.301 KB               WR = 0.125 KB
+
+INFO::[ Vitis-EM 22 ] [Time elapsed: 8 minute(s) 39 seconds, Emulation time: 0.466535 ms]
+Data transfer between kernel(s) and global memory(s)
+var012_no_pragmas_1:m_axi_gmem-DDR[1]          RD = 8.000 KB               WR = 4.000 KB
+var012_pipe_unroll_1:m_axi_gmem-DDR[1]          RD = 0.000 KB               WR = 0.000 KB
+var012_pipelined_1:m_axi_gmem-DDR[1]          RD = 0.000 KB               WR = 0.000 KB
+var012_unrolled_1:m_axi_gmem-DDR[1]          RD = 3.750 KB               WR = 1.812 KB
+
+INFO::[ Vitis-EM 22 ] [Time elapsed: 13 minute(s) 39 seconds, Emulation time: 0.771576 ms]
+Data transfer between kernel(s) and global memory(s)
+var012_no_pragmas_1:m_axi_gmem-DDR[1]          RD = 8.000 KB               WR = 4.000 KB
+var012_pipe_unroll_1:m_axi_gmem-DDR[1]          RD = 0.000 KB               WR = 0.000 KB
+var012_pipelined_1:m_axi_gmem-DDR[1]          RD = 0.000 KB               WR = 0.000 KB
+var012_unrolled_1:m_axi_gmem-DDR[1]          RD = 7.699 KB               WR = 3.812 KB
+
+| var012_urolled          |            653277479951 |
+|-------------------------+-------------------------|
+| var012_pipelined        |             24012090705 |
+|-------------------------+-------------------------|
+INFO::[ Vitis-EM 22 ] [Time elapsed: 18 minute(s) 40 seconds, Emulation time: 1.05055 ms]
+Data transfer between kernel(s) and global memory(s)
+var012_no_pragmas_1:m_axi_gmem-DDR[1]          RD = 8.000 KB               WR = 4.000 KB
+var012_pipe_unroll_1:m_axi_gmem-DDR[1]          RD = 2.270 KB               WR = 1.133 KB
+var012_pipelined_1:m_axi_gmem-DDR[1]          RD = 8.000 KB               WR = 4.000 KB
+var012_unrolled_1:m_axi_gmem-DDR[1]          RD = 8.000 KB               WR = 4.000 KB
+
+INFO::[ Vitis-EM 22 ] [Time elapsed: 23 minute(s) 40 seconds, Emulation time: 1.25502 ms]
+Data transfer between kernel(s) and global memory(s)
+var012_no_pragmas_1:m_axi_gmem-DDR[1]          RD = 8.000 KB               WR = 4.000 KB
+var012_pipe_unroll_1:m_axi_gmem-DDR[1]          RD = 4.195 KB               WR = 2.094 KB
+var012_pipelined_1:m_axi_gmem-DDR[1]          RD = 8.000 KB               WR = 4.000 KB
+var012_unrolled_1:m_axi_gmem-DDR[1]          RD = 8.000 KB               WR = 4.000 KB
+
+INFO::[ Vitis-EM 22 ] [Time elapsed: 28 minute(s) 46 seconds, Emulation time: 1.51806 ms]
+Data transfer between kernel(s) and global memory(s)
+var012_no_pragmas_1:m_axi_gmem-DDR[1]          RD = 8.000 KB               WR = 4.000 KB
+var012_pipe_unroll_1:m_axi_gmem-DDR[1]          RD = 6.672 KB               WR = 3.332 KB
+var012_pipelined_1:m_axi_gmem-DDR[1]          RD = 8.000 KB               WR = 4.000 KB
+var012_unrolled_1:m_axi_gmem-DDR[1]          RD = 8.000 KB               WR = 4.000 KB
+
+| var012_pipe_unroll      |           1028355914876 |
+|-------------------------+-------------------------|
+Note: Wall Clock Time is meaningful for real hardware execution only, not for emulation.
+Please refer to profile summary for kernel execution time for hardware emulation.
+TEST PASSED.
+INFO::[ Vitis-EM 22 ] [Time elapsed: 33 minute(s) 46 seconds, Emulation time: 1.73059 ms]
+Data transfer between kernel(s) and global memory(s)
+var012_no_pragmas_1:m_axi_gmem-DDR[1]          RD = 8.000 KB               WR = 4.000 KB
+var012_pipe_unroll_1:m_axi_gmem-DDR[1]          RD = 8.000 KB               WR = 4.000 KB
+var012_pipelined_1:m_axi_gmem-DDR[1]          RD = 8.000 KB               WR = 4.000 KB
+var012_unrolled_1:m_axi_gmem-DDR[1]          RD = 8.000 KB               WR = 4.000 KB
+
+INFO::[ Vitis-EM 22 ] [Time elapsed: 35 minute(s) 39 seconds, Emulation time: 1.79479 ms]
+Data transfer between kernel(s) and global memory(s)
+var012_no_pragmas_1:m_axi_gmem-DDR[1]          RD = 8.000 KB               WR = 4.000 KB
+var012_pipe_unroll_1:m_axi_gmem-DDR[1]          RD = 8.000 KB               WR = 4.000 KB
+var012_pipelined_1:m_axi_gmem-DDR[1]          RD = 8.000 KB               WR = 4.000 KB
+var012_unrolled_1:m_axi_gmem-DDR[1]          RD = 8.000 KB               WR = 4.000 KB
+
+INFO: [HW-EMU 06-0] Waiting for the simulator process to exit

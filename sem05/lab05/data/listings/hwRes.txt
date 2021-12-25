@@ -1,0 +1,21 @@
+[Console output redirected to file:/iu_home/iu7072/workspace/Alveo_lab2/Hardware/SystemDebugger_Alveo_lab2_system_Alveo_lab2.launch.log]
+Found Platform
+Platform Name: Xilinx
+INFO: Reading /iu_home/iu7072/workspace/Alveo_lab2_system/Hardware/binary_container_1.xclbin
+Loading: '/iu_home/iu7072/workspace/Alveo_lab2_system/Hardware/binary_container_1.xclbin'
+Trying to program device[0]: xilinx_u200_xdma_201830_2
+Device[0]: program successful!
+|-------------------------+-------------------------|
+| Kernel                  |    Wall-Clock Time (ns) |
+|-------------------------+-------------------------|
+| var012_no_pragmas       |                45233097 |
+|-------------------------+-------------------------|
+| var012_urolled          |               662424184 |
+|-------------------------+-------------------------|
+| var012_pipelined        |                44303683 |
+|-------------------------+-------------------------|
+| var012_pipe_unroll      |               913769872 |
+|-------------------------+-------------------------|
+Note: Wall Clock Time is meaningful for real hardware execution only, not for emulation.
+Please refer to profile summary for kernel execution time for hardware emulation.
+TEST PASSED.
