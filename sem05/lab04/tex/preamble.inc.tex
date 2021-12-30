@@ -3,6 +3,11 @@
 \usepackage[T2A]{fontenc}
 \usepackage[english,russian]{babel}
 
+% We will externalize the figures
+\usepackage{pgfplots}
+\usepgfplotslibrary{external}
+\tikzexternalize
+
 % searchable and copyable
 \usepackage{cmap}
 
@@ -40,6 +45,26 @@
 \usepackage{listings}
 \usepackage[newfloat]{minted}
 \usepackage{verbatim}
+\usepackage[framemethod=tikz]{mdframed}
+
+\mdfdefinestyle{mymdstyle}{
+    innerleftmargin=0mm,
+    innerrightmargin=0mm,
+    innertopmargin=-5pt,
+    innerbottommargin=-9pt,
+    splittopskip=\baselineskip,
+    hidealllines=true,
+    middleextra={
+      \node[anchor=west] at (O|-P)
+        {\lstlistingname~\thelstlisting~(продолжение)};
+        },
+    secondextra={
+      \node[anchor=west] at (O|-P)
+        {\lstlistingname~\thelstlisting~(продолжение)};},
+}
+
+\surroundwithmdframed[style=mymdstyle]{lstlisting}
+\newmdenv[style=mymdstyle]{mdlisting}
 
 \newcommand{\mylisting}[4] {
     \noindent
@@ -54,6 +79,13 @@
     \end{minipage}
 }
 
+\newcommand{\mybreaklisting}[4]{
+    \begin{mdlisting}
+        \captionsetup{justification=raggedright,singlelinecheck=off}
+        \lstinputlisting[label=lst:#2, caption=#1, basicstyle=\tiny,
+        linerange=#3]{../data/listings/#4}
+    \end{mdlisting}
+}
 % Images
 \usepackage{graphicx}
 \newcommand{\scheme}[4] {
@@ -84,7 +116,7 @@
 % Lists
 \usepackage{enumitem}
 \renewcommand{\labelitemi}{$-$}
-\setlist{nosep, leftmargin=\parindent, wide}
+\setlist{nosep, wide}
 
 % Comments
 \usepackage{comment}
