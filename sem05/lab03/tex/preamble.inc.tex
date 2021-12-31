@@ -40,6 +40,26 @@
 \usepackage{listings}
 \usepackage[newfloat]{minted}
 \usepackage{verbatim}
+\usepackage[framemethod=tikz]{mdframed}
+
+\mdfdefinestyle{mymdstyle}{
+    innerleftmargin=0mm,
+    innerrightmargin=0mm,
+    innertopmargin=-5pt,
+    innerbottommargin=-9pt,
+    splittopskip=\baselineskip,
+    hidealllines=true,
+    middleextra={
+      \node[anchor=west] at (O|-P)
+        {\lstlistingname~\thelstlisting~(продолжение)};
+        },
+    secondextra={
+      \node[anchor=west] at (O|-P)
+        {\lstlistingname~\thelstlisting~(продолжение)};},
+}
+
+\surroundwithmdframed[style=mymdstyle]{lstlisting}
+\newmdenv[style=mymdstyle]{mdlisting}
 
 \newcommand{\mylisting}[4] {
     \noindent
@@ -49,9 +69,17 @@
             caption={#1},
             label={lst:#2},
             linerange={#3}
-        ]{../data/listings/#4}
+        ]{../../src/#4}
         \end{lstinputlisting}
     \end{minipage}
+}
+
+\newcommand{\mybreaklisting}[4]{
+    \begin{mdlisting}
+        \captionsetup{justification=raggedright,singlelinecheck=off}
+        \lstinputlisting[label=lst:#2, caption=#1,
+        linerange=#3]{../data/listings/#4}
+    \end{mdlisting}
 }
 
 % Images
@@ -121,5 +149,5 @@
             \end{tabular}
         \end{threeparttable}
         \end{center}
-    \end{table} 
+    \end{table}
 }
